@@ -1,0 +1,400 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #26324b;
+    background: #f7f8fc;
+    line-height: 1.6;
+}
+
+#salma_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    background: white;
+    box-shadow: 0 2px 12px #18264b0d;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.salma_logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #263c78;
+}
+
+.salma_logo span {
+    color: #8066e9;
+}
+
+.salma_nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.salma_nav a {
+    text-decoration: none;
+    color: #59647b;
+    font-size: 14px;
+}
+
+.salma_nav a:hover,
+.salma_nav .salma_active {
+    color: #8066e9;
+    font-weight: bold;
+}
+
+.salma_button,
+.salma_outline {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.salma_button {
+    background: #7660db;
+    color: white;
+}
+
+.salma_button:hover {
+    background: #5c49b7;
+}
+
+.salma_outline {
+    border: 1px solid #7660db;
+    color: #7660db;
+}
+
+#salma_hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 90px 10%;
+    background: linear-gradient(120deg, #f0edff, #f9faff);
+}
+
+.salma_hero_text {
+    flex: 1;
+}
+
+.salma_label {
+    color: #7660db;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.salma_hero_text h1 {
+    font-size: 43px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.salma_hero_text h1 span {
+    color: #7660db;
+}
+
+.salma_hero_text > p:not(.salma_label) {
+    color: #69748b;
+    max-width: 520px;
+    margin-bottom: 25px;
+}
+
+.salma_hero_buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.salma_hero_card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 340px;
+    text-align: center;
+    box-shadow: 0 12px 40px #303b6414;
+}
+
+.salma_card_top {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.salma_progress_circle {
+    width: 145px;
+    height: 145px;
+    border: 12px solid #e5dfff;
+    border-top-color: #7660db;
+    border-right-color: #7660db;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 30px auto 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #7660db;
+}
+
+.salma_hero_card p {
+    color: #8991a5;
+    font-size: 13px;
+}
+
+.salma_mini_stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.salma_mini_stats div {
+    display: flex;
+    flex-direction: column;
+}
+
+.salma_mini_stats strong {
+    font-size: 22px;
+    color: #7660db;
+}
+
+.salma_mini_stats small {
+    color: #8991a5;
+}
+
+#salma_features {
+    padding: 75px 10%;
+}
+
+.salma_section_heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.salma_section_heading h2 {
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.salma_section_heading p:last-child {
+    color: #8991a5;
+}
+
+.salma_feature_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.salma_feature {
+    background: white;
+    padding: 28px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #303b640d;
+}
+
+.salma_icon {
+    font-size: 32px;
+}
+
+.salma_feature h3 {
+    margin: 15px 0 8px;
+}
+
+.salma_feature p {
+    color: #8991a5;
+    margin-bottom: 15px;
+}
+
+.salma_feature a {
+    color: #7660db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#salma_cta {
+    margin: 20px 10% 70px;
+    padding: 45px 20px;
+    text-align: center;
+    background: #eae6ff;
+    border-radius: 18px;
+}
+
+#salma_cta p {
+    margin: 10px 0 20px;
+    color: #69748b;
+}
+
+#salma_footer {
+    text-align: center;
+    padding: 35px 15px;
+    background: #25345e;
+    color: white;
+}
+
+#salma_footer p {
+    color: #c3c9dc;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+@media (max-width: 900px) {
+    #salma_hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .salma_hero_text > p:not(.salma_label) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .salma_hero_buttons {
+        justify-content: center;
+    }
+
+    .salma_feature_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    #salma_header {
+        flex-direction: column;
+    }
+
+    .salma_nav {
+        justify-content: center;
+    }
+
+    #salma_hero {
+        padding: 55px 6%;
+    }
+
+    .salma_hero_text h1 {
+        font-size: 32px;
+    }
+
+    .salma_hero_card {
+        width: 100%;
+    }
+
+    .salma_feature_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .salma_section_heading h2 {
+        font-size: 24px;
+    }
+}
+
+
+#salma_task_form {
+    max-width: 650px;
+    margin-top: 25px;
+}
+
+#salma_task_form label {
+    display: block;
+    margin: 15px 0 6px;
+    font-weight: bold;
+}
+
+#salma_task_form input,
+#salma_task_form select,
+#salma_task_form textarea,
+#salma_contact_form input,
+#salma_contact_form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dce0eb;
+    border-radius: 8px;
+    font: inherit;
+    margin-bottom: 10px;
+}
+
+#salma_task_form button {
+    border: none;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+
+.salma_calendar_grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.salma_calendar_day {
+    padding: 12px 4px;
+    background: #eeeaff;
+    color: #6652bd;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.salma_calendar_date {
+    padding: 15px 4px;
+    background: #f7f8fc;
+    border-radius: 7px;
+}
+
+.salma_deadline_date {
+    background: #7660db;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .salma_calendar_grid {
+        gap: 4px;
+    }
+
+    .salma_calendar_date,
+    .salma_calendar_day {
+        padding: 9px 2px;
+        font-size: 12px;
+    }
+}
+
+
+#salma_contact_form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#salma_contact_form label {
+    display: block;
+    margin: 15px 0 6px;
+    font-weight: bold;
+}
+
+#salma_contact_form button {
+    margin-top: 12px;
+}
+
+#salma_contact_form textarea {
+    resize: vertical;
+}
+
+
+.salma_feature button {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.salma_feature button:hover {
+    background: #5c49b7;
+}
