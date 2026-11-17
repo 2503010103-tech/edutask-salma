@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - EduTask</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="salma_header">
+        <div class="salma_logo">EduTask<span>.</span></div>
+        <nav class="salma_nav">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="tugas.html">Daftar Tugas</a>
+            <a href="kalender.html">Kalender</a>
+            <a href="tips.html">Tips Belajar</a>
+            <a href="kontak.html" class="salma_active">Kontak</a>
+        </nav>
+        <a href="tambah-tugas.html" class="salma_button">Tambah Tugas</a>
+    </header>
+
+    <main style="padding:55px 8%; min-height:70vh;">
+        <p class="salma_label">GET IN TOUCH</p>
+        <h1>Hubungi Kami</h1>
+        <p style="color:#8991a5; margin-bottom:30px;">
+            Punya pertanyaan atau saran? Kirimkan pesan melalui formulir berikut.
+        </p>
+
+        <div class="salma_feature_grid">
+            <section class="salma_feature">
+                <div class="salma_icon">📧</div>
+                <h3>Email</h3>
+                <p>salmanafisa@edutask.com</p>
+            </section>
+
+            <section class="salma_feature">
+                <div class="salma_icon">📍</div>
+                <h3>Lokasi</h3>
+                <p>Tasikmalaya, Jawa Barat</p>
+            </section>
+
+            <section class="salma_feature">
+                <div class="salma_icon">💬</div>
+                <h3>Layanan</h3>
+                <p>Pertanyaan dan masukan pengguna EduTask.</p>
+            </section>
+        </div>
+
+        <form id="salma_contact_form" class="salma_feature"
+            style="max-width:650px; margin-top:35px;">
+            <h2>Kirim Pesan</h2>
+
+            <label for="salma_nama">Nama Lengkap</label>
+            <input type="text" id="salma_nama" required
+                placeholder="Masukkan nama kamu">
+
+            <label for="salma_email">Email</label>
+            <input type="email" id="salma_email" required
+                placeholder="Masukkan email kamu">
+
+            <label for="salma_subjek">Subjek</label>
+            <input type="text" id="salma_subjek" required
+                placeholder="Subjek pesan">
+
+            <label for="salma_pesan">Pesan</label>
+            <textarea id="salma_pesan" rows="5" required
+                placeholder="Tuliskan pesan kamu"></textarea>
+
+            <button type="submit" class="salma_button"
+                style="border:none; cursor:pointer;">
+                Kirim Pesan
+            </button>
+            <p id="salma_contact_message" style="margin-top:15px;"></p>
+        </form>
+    </main>
+
+    <footer id="salma_footer">
+        <h3>EduTask.</h3>
+        <p>Student Task Management Website</p>
+        <p>© 2026 EduTask.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Tugas - EduTask</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="salma_header">
+        <div class="salma_logo">EduTask<span>.</span></div>
+        <nav class="salma_nav">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="tugas.html">Daftar Tugas</a>
+            <a href="kalender.html">Kalender</a>
+            <a href="tips.html">Tips Belajar</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+        <a href="tambah-tugas.html" class="salma_button">Tambah Tugas</a>
+    </header>
+
+    <main style="padding:55px 8%; min-height:70vh;">
+        <p class="salma_label">TASK INPUT</p>
+        <h1>Tambah Tugas Baru</h1>
+        <p style="color:#8991a5; margin-bottom:25px;">
+            Catat tugas kuliah agar tidak lupa deadline.
+        </p>
+
+        <form id="salma_task_form" class="salma_feature">
+            <label>Nama Tugas</label>
+            <input type="text" id="salma_nama_tugas" required
+                placeholder="Contoh: Membuat laporan praktikum">
+
+            <label>Mata Kuliah</label>
+            <input type="text" id="salma_matkul" required
+                placeholder="Contoh: Pemrograman Web">
+
+            <label>Deadline</label>
+            <input type="date" id="salma_deadline" required>
+
+            <label>Prioritas</label>
+            <select id="salma_prioritas">
+                <option value="Rendah">Rendah</option>
+                <option value="Sedang" selected>Sedang</option>
+                <option value="Tinggi">Tinggi</option>
+            </select>
+
+            <label>Deskripsi</label>
+            <textarea id="salma_deskripsi" rows="4"
+                placeholder="Tuliskan detail tugas..."></textarea>
+
+            <button type="submit" class="salma_button">
+                Simpan Tugas
+            </button>
+        </form>
+        <p id="salma_task_message" style="margin-top:15px;"></p>
+    </main>
+
+    <footer id="salma_footer">
+        <h3>EduTask.</h3>
+        <p>Student Task Management Website</p>
+        <p>© 2026 EduTask.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
